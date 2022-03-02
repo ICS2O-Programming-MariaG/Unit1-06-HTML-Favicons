@@ -1,10 +1,68 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-ca">
   <head>
+    <meta charset="utf-8">
+    <meta name="description" content="My first webpage with a favicon">
+    <meta name="keywords" content="immaculata, ics2o, favicon">
+    <meta name="author" content="MariaG">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Code for the favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="./fav-index/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="./fav-index/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./fav-index/favicon-16x16.png">
     <link rel="manifest" href="./fav-index/site.webmanifest">
+    <!-- To use Google's MDL -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-cyan.min.css" />
     <title>Maria's First Webpage With Favicons</title>
   </head>
+  <body>
+    <!-- More code for Google's MDL -->
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+    <!-- General container for elements -->
+    <div class = "mdl-layout mdl-js-layout mdl-layout--fixed-header">
+      <!-- Webpage header -->
+      <header class="mdl-layout__header">
+	      <div class="mdl-layout__header-row">      
+	        <span class="mdl-layout-title">My First Web Page With a Favicon</span>
+	      </div>       
+      </header>
+      <!-- Another container for content -->
+	    <main class = "mdl-layout__content" style = "padding-left:20px">
+        <br>
+        <h3>Welcome!</h3>
+        <p>Welcome to my first page with a favicon! Please see the favicon in the browser tab above.</p>
+        <!-- Wide card with description and content -->
+        <br>
+        <h3>Another element:</h3>
+        <p>I created a card (seen below) for more information:</p>
+        <style>
+        .demo-card-wide.mdl-card {
+          width: 512px;
+        }
+        .demo-card-wide > .mdl-card__title {
+          color: #fff;
+          height: 176px;
+          background: url('./images/flowers.jfif') center / cover;
+        }
+        .demo-card-wide > .mdl-card__menu {
+          color: #fff;
+        }
+        </style>
+        <div class="demo-card-wide mdl-card mdl-shadow--2dp">
+          <div class="mdl-card__title">
+            <h2 class="mdl-card__title-text">More Information</h2>
+          </div>
+          <div class="mdl-card__supporting-text">
+            Please enjoy this beautiful picture of flowers in the spring (I believe they are grape hyacinths). Also, see below for my second webpage:
+          </div>
+          <div class="mdl-card__actions mdl-card--border">
+            <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="./index2.html">
+            My Second Page
+            </a>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
 </html>
